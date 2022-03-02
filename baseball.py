@@ -1,10 +1,10 @@
 import random
 
-print("맞출 숫자의 갯수를 입력해주세요.*권장:3* ")
+print("맞출 숫자의 개수를 입력해주세요.*권장:3*(최대:9) ")
 the_number_of_ball = int(input())
-print("선택하신 갯수는"+ str(the_number_of_ball) +"입니다.")
+print("선택하신 개수는"+ str(the_number_of_ball) +"입니다.")
 baseball = "".join(map(str,random.sample(range(1,10),the_number_of_ball)))
-print(baseball)
+print(baseball)  # 정답
 count = 0
 while 1:
     strike = 0
